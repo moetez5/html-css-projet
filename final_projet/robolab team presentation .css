@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+
+}
+.main{
+    background: rgba(0, 0, 0, 0.842);
+}
+
+
+
+
+
+/*navbar style*/
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: -30px;
+    transform: translate(-50%);
+
+}
+ul li a{
+    color: rgb(255, 255, 255);
+    padding: 9px 20px;
+    transition: 0.3 s ease;
+    border-radius: 1px;
+}
+.z :hover{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    padding: 13.05px 0;
+    background: rgb(238, 55, 92);
+}
+
+.navbar .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-left: 30px;
+    font-family: 'Brush Script MT', cursive;
+}
+
+.Bar{
+    background-color:rgba(238, 62, 76, 0.7);
+    position: fixed;
+    width: 2.5%;
+    height: 1000%;
+    z-index: 1;
+    transform: translate(0%,90%);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 60%;
+    border-top-right-radius: 40px;
+}
+
+.S{
+    transform: translate(-15%,160%);
+    width: 40px;
+    padding: 5px;
+    margin-right: -7px;
+}
+.n{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transform: translate(10%,40%);
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 30px;
+}
+.content{
+    margin-top: 90px;
+    padding: 10px;
+}
+.pfp{
+    transition:all .2s ease;
+    width: 120px;
+    height: 120px;
+    border-radius: 160px;
+    border: 2px thick;
+    transform: translate(0%,-50%);
+}
+.txt{
+    transform: translate(0%,-900%);
+    color: black;
+    font-size: 20px;
+    font-family: Fixed, monospace;
+}
+.l{
+    transition:all .2s ease;
+    opacity: 0;
+    background-color: rgba(255, 255, 255,0.4);
+    width: 120px;
+    height: 120px;
+    border-radius: 160px;
+    transform: translate(107%,-168%);
+}
+.l:hover ,.pfp:hover ~ .l{
+    opacity: 0.5;
+}
+.about{
+    color: black;
+    font-size: 20px;
+    font-family: Fixed, monospace;
+
+}
+.button{
+    font-size: 17px;
+    padding: 0;
+    width: 90px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px transparent;
+}
+

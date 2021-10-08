@@ -1,0 +1,3190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+
+
+
+
+/*navbar style*/
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+}
+ul li a{
+    color: rgb(255, 255, 255);
+    padding: 9px 20px;
+    transition: 0.3 s ease;
+    border-radius: 1px;
+    border-color: white;
+}
+.z :hover{
+    color: crimson;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+    border-color: black;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    padding: 20px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: all 0.3s ease;
+    padding: 13.05px 0;
+    background: rgba(0, 0, 0,0.9);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar .form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+#logo{
+    width: 140px;
+    height: 60px;
+    transform: translate(12%,-50%);
+    margin-top: 10px;
+}
+.logo{
+    width: 10px;
+    height: 10px;
+    transform: translate(12%);
+}
+
+
+
+
+
+
+/*home style*/
+.home{
+    display: flex;
+    background: rgba(0, 0, 0, 0.842);
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Work Sans', sans-serif;
+}
+.home .form{
+    margin: auto 0 auto 30px;
+}
+.home .form .text1{
+    font-size: 27px;
+    margin-left: 70px;
+}
+.home .form .text2{
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: 70px;
+}
+.home .form .text3{
+    font-size: 70px;
+    font-weight: 500;
+    margin-left: 70px;
+}
+.home .form .text4{
+    font-size: 27px;
+    margin-left: 70px;
+}
+.home .form .text4 span{
+    color: crimson;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn1 a{
+    color: white;
+    padding: 3px 20px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    display: inline-block;
+    background: none;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 40px;
+    margin-left: 70px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+.btn1 :hover{
+    color: black;
+    background-color: crimson;
+    transition: 0.6s ease;
+    border-color: crimson;
+    box-shadow: 0 0 8px#000000;
+}
+    
+
+
+
+
+
+
+/*Our team style*/
+.our-team{
+    padding-bottom: 50px;
+}
+.row{
+    align-items: center;
+    margin: 90px 0;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 80px;
+}
+.paragraphe{
+    font-family: 'Lato', sans-serif;
+   color: 0 0 8px#000000;
+   font-size: 23px;
+   margin-top: 20px;
+   margin-left: -35px;  
+}
+.btn2 a{
+    color: rgb(0, 0, 0);
+    padding: 3px 20px;
+    border-radius: 10px;
+    border: 2px solid crimson;
+    display: inline-block;
+    background: none;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 40px;
+    margin-left: 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    width: 203px; 
+}
+.btn2 :hover{
+    color: black;
+    background-color: crimson;
+    transition: 0.6s ease;
+    border-color: crimson;
+    box-shadow: 0 0 8px#000000;
+}
+section .title1{ 
+    position: relative;
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-left: 200px;
+}
+section .title1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 11%;
+    width: 180px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+}
+/*img slide style*/
+.carousel-container{
+    overflow: hidden;
+    width: 33%;
+    height: 60%;
+    border: 5px solid black;
+    margin-left: 830px;
+    margin-top: -460px;
+    border-radius: 20px;
+    background: #030303;
+    -webkit-box-shadow: 5px 11px 16px 12px rgba(0,0,0,0.68); 
+    box-shadow: 5px 11px 16px 12px rgba(0,0,0,0.68);
+}
+.carousel-slide{
+    display: flex;
+    animation: 10s slider infinite;
+   position: relative;
+}
+.carousel-slide img{
+    float: left;
+}
+@keyframes slider {
+    0% {
+        right: 0;
+    }
+    15% {
+        right: 490px;
+    }
+    45% {
+        right: 1020px;
+    }   
+    75% {
+        right: 1505px;
+    }
+}
+
+
+
+
+
+
+/*last progressed style*/
+.achievements-form{
+    background: rgba(0, 0, 0, 0.842);
+    margin-top: 70px;    
+}
+.title2{
+    position: relative;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+    margin-right: 200px;
+    padding-bottom: 30px;
+    color: white;
+}
+.title2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right:-6%;
+    width: 240px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+}
+
+.progressed-text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    margin-left: 750px;
+    margin-top: 50px;
+    font-family: 'Lato', sans-serif;
+}
+.paragraphe2{
+    font-family: 'Open Sans', sans-serif;
+   font-size: 23px;
+   margin-top: 20px;
+   color: white;
+   margin-left: 750px;
+   padding-bottom: 100px;
+}
+/*video style*/
+.container{
+    display: flex;
+    width: 600px;
+    height: 180px;
+    margin-left: 50px;
+    margin-top: -430px;
+}
+.video{
+    width: 100vh;
+    max-width: 100%;
+    border-radius: 20px;
+    background: #030303;
+    -webkit-box-shadow: -6px 8px 26px 14px rgba(0,0,0,0.83); 
+    box-shadow: -6px 8px 26px 14px rgba(0,0,0,0.83);
+}
+
+
+
+
+
+
+/*skills style*/
+.title3{
+    margin-top: 250px;
+    color: black;
+    text-align: center;
+    position: relative;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title3::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+    top: 110px;
+}
+/*html img style*/
+.html{
+    height: 150px;
+    margin-left: 10%;
+    margin-top: 60px;
+}
+.Arrow{
+    height: 150px;
+    width: 160px;
+    margin-left: 5%;
+}
+.ht{
+    text-align: right;
+    margin-top: -100px;
+    font-size: 40px;
+    margin-right:30%;
+}
+/*css img style*/
+.css{
+    height: 150px;
+    margin-left: 135px;
+    margin-top: 60px;
+}
+.Arrow2{
+    height: 150px;
+    width: 160px;
+    margin-left: 480px;
+}
+.cs{
+    margin-top: -100px;
+    font-size: 40px;
+    margin-left: 245px;
+}
+
+/*js style*/
+.javascript{
+    height: 160px;
+    margin-left: 21%;
+    margin-top: 60px;
+}
+.Arrow3{
+    height: 150px;
+    width: 160px;
+    margin-left: 90px;
+}
+.js{
+    text-align: right;
+    font-size: 40px;
+    margin-top: -108px;
+    margin-right: 26.8%;
+}
+
+/*python style*/
+.python-img{
+    height: 150px;
+    margin-left: 135px;
+    margin-top: 60px;
+}
+.Arrow4{
+    height: 150px;
+    width: 160px;
+    margin-left: 620px;
+}
+.python{
+    height: 150px;
+    width: 160px;
+    font-size: 40px;
+    margin-left: 370px;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+
+/*login style*/
+.login{
+    background-color: rgba(0, 0, 0, 0.842);
+    height: 500px;
+}
+.title4{
+    top: 5%;
+    color: rgb(255, 255, 255);
+    margin-left: 590px;
+    position: relative;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title4::before{
+    content: "";
+    position: absolute;
+    left: 12.5%;
+    width: 180px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+    top: 60px;
+}
+.robolab-img{
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 90px;
+    padding-bottom: 20px;
+}
+.login-box{
+  margin-left: 63%;
+  width: 430px;
+  height: 350px;
+  background-color: rgb(255, 255, 255);
+  margin-top: -380px;
+  border-radius: 10px;
+  box-shadow:  29px 29px 58px #070505d5,
+                -29px -29px 58px #272727;
+}
+#robo{
+    background: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 38px;
+    border: 2px solid black;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.25s;
+    padding: 10px;
+}
+.login input[type = "text"]:focus{
+    box-shadow: 0 0 10px  rgb(0, 0, 0);
+}
+.login input[type = "email"]:focus{
+    box-shadow: 0 0 10px  rgb(0, 0, 0);
+}
+.login input[type = "password"]:focus{
+    box-shadow: 0 0 10px  rgb(0, 0, 0);
+}
+.ccc{
+    width: 400px;
+}
+.input{
+    background: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 155px;
+    font-size: 18px;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: white;
+    border: none;    
+}
+.login input[type="submit"]:hover{
+    background: crimson;
+    transition: 0.6s ease;
+    box-shadow: 0 0 10px  rgb(0, 0, 0);
+   }
+.SDD{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+
+
+/*contact style*/
+.contact{
+    height: 600px;
+}
+.title5{
+    top: 5%;
+    color: rgb(0, 0, 0);
+    margin-left: 590px;
+    position: relative;
+    font-size: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.title5:before{
+    content: "";
+    position: absolute;
+    left: 13.5%;
+    width: 180px;
+    height: 3px;
+    background: crimson;
+    transform: translateX(-50%);
+    top: 60px;
+}
+.contact-text{
+    font-family: 'Poppins', sans-serif;
+   color: 0 0 8px#000000;
+   font-size: 25px;
+   padding-top: 5px;
+   margin-left: 90px;
+}
+.contact-text-design{
+    color: crimson;
+}
+.hello{
+    font-family: 'Noto Sans TC', sans-serif;
+    margin-top: 230px;
+    margin-left: 90px;
+    font-size: 27px;
+}
+.contact-box{
+    background-color: rgb(0, 0, 0);
+    width: 500px;
+    height: 513px;
+    margin-left: 850px;
+    border-radius: 15px;
+    margin-top: -600px;
+    -webkit-box-shadow: 9px 5px 8px 4px rgba(0, 0, 0, 0.68); 
+    -moz-box-shadow:    9px 5px 8px 4px rgba(0, 0, 0, 0.68);
+    box-shadow:         9px 5px 8px 4px rgba(0, 0, 0, 0.68);
+}
+#robot{
+    background: white;
+    color: rgb(0, 0, 0);
+    margin-top: 30px;
+    margin-left: 18px;
+    height: 38px;
+    width: 220px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    transition: 0.25s;
+    padding: 10px;   
+}
+.text-area{
+    min-width: 460px;
+    min-height: 250px;
+    resize: none;
+    margin-left: 18px;
+    margin-top: 27px;
+    margin-bottom: 28px;
+    outline: none;
+    padding: 10px; 
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.contact-box input[type = "text"]:focus{
+    box-shadow: 0 0 10px  rgb(107, 107, 107);  
+}
+.contact-box input[type = "email"]:focus{
+    box-shadow: 0 0 10px  rgb(107, 107, 107);  
+}
+.contact-box input[type = "number"]:focus{
+    box-shadow: 0 0 10px  rgb(107, 107, 107);  
+}
+.contact-box input[class= "text-area"]:focus{
+    box-shadow: 0 0 10px  rgb(107, 107, 107);  
+}
+
+   .send-btn a{
+    color: rgb(255, 255, 255);
+    padding: 3px 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background: none;
+    font-size: 20px;
+    padding: 12px 36px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin-left: 190px;
+}
+.send-btn :hover{
+    color: rgb(255, 255, 255);
+    background-color: crimson;
+    transition: 0.6s ease;
+    border-color: crimson;
+    box-shadow: 0 0 8px crimson;
+    border-radius: 15px;
+}
+
+
+
+
+
+
+
+/*footer style*/
+.footer{
+    background-color: rgba(0, 0, 0, 0.877);
+    height: 240px;
+}
+.footer-logo{
+    position: relative;
+    color: rgb(255, 255, 255);
+    font-size: 37px;
+    margin-left: 200px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+.footer-logo:before{
+    content: "";
+    position: absolute;
+    left: 14.5%;
+    width: 330px;
+    height: 1px;
+    background: crimson;
+    transform: translateX(-50%);
+    top: 113px;
+}
+.footer-logo::after{
+    content: "let's connect ";
+    position: absolute;
+    margin-top: 58px;
+    margin-left: -190px;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    background: rgba(34, 31, 31, 0.877);
+    transform: translateX(-50%);
+}
+#icon-img{
+    height: 50px;
+    right: 30px;
+    border-radius: 50px;
+    margin-left: 32px; 
+}
+.gg{
+    padding: 50px;
+}
+
+
+
+
+
+
+
+
+/*media query*/
+@media  (max-width:1199px){
+    /*navbar*/
+    ul li{
+        padding: 5px;
+        margin: 5px;
+    }
+
+   /*team*/    
+    section .title1{ 
+        margin-left: 450px;
+    }
+    section .title1::before{
+        left: 140px;
+        width: 180px;
+        height: 3px;
+    }
+    .our-team{
+        height: 110vh;
+    }
+   
+    .paragraphe{
+        margin-left: 210px;
+    }
+    .carousel-container{
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px;
+        -webkit-box-shadow: 9px 5px 14px 0px rgba(0, 0, 0, 0.55);
+        -moz-box-shadow:    9px 5px 14px 0px rgba(0, 0, 0, 0.55);
+        box-shadow:         9px 5px 14px 0px rgba(0, 0, 0, 0.55)
+    }
+    .btn2{
+        margin-left: 210px;
+    }
+
+
+
+   /*last progressed*/
+    .title2{
+    margin-right: 420px;
+    }
+    .title2::before{
+        right: -11%;
+    }
+    .progressed-text{
+        margin-left: 600px;
+    }
+    .paragraphe2{
+    font-size: 18px;
+    margin-top: 20px;
+    margin-left: 600px;
+    padding-bottom: 100px;
+    }
+    .container{
+        width: 450px;
+        height: 180px;
+        margin-left: 15px;
+        margin-top: -310px;
+    }
+    
+    
+    /*team skills*/
+    .title3{
+    margin-top: 120px; 
+    }
+    /*html img style*/
+    .html{
+        height: 130px;
+    }
+    /*css img style*/
+    .css{
+        margin-left: 80px;
+        height: 130px;
+        margin-top: 50px;
+ 
+    }
+    .Arrow2{
+        margin-left: 440px;
+    }
+    .cs{
+        margin-left: 227px;
+    }
+
+    /*js style*/
+    .javascript{
+        height: 130px;
+        margin-left: 21.5%;
+    }
+    
+    /*python style*/
+    .python-img{
+        height: 130px;
+        margin-left: 80px;
+    }
+    .Arrow4{
+        margin-left: 520px;
+    }
+    .python{
+        margin-left: 310px;
+    }
+
+    /*login style*/
+    .login{
+        height: 550px;
+    }
+    .title4{
+        margin-left: 480px;
+    }
+    .title4::before{
+        left: 15%;
+    }
+    .robolab-img{
+        height: 330px;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+    .login-box{
+        margin-left: 58%;
+        margin-top: -350px;
+        box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -webkit-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -moz-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+      }
+
+
+    /*contact style*/
+    .title5{
+        margin-left: 470px;
+    }
+    .title5:before{
+        left: 15%;
+    }
+    .hello{
+        margin-top: 230px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: 0 0 8px#000000;
+        font-size: 25px;
+        padding-top: 5px;
+        margin-left: 35px;
+     }
+
+     .contact-box{
+        margin-left: 630px;
+    }
+
+
+
+
+
+    /*footer style*/
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 50px;
+    }
+    .footer-logo:before{
+        left: 15%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -180px;
+    }
+    #icon-img{
+        margin-left: 30px;  
+        margin-top: 50px; 
+    }
+    .gg{
+        display: none;
+    }
+
+
+
+}
+@media  (max-width:1160px){
+     /*contact style*/
+     .title5{
+        margin-left: 470px;
+    }
+    .title5:before{
+        left: 17%;
+    }
+    .hello{
+        margin-top: 230px;
+        margin-left: 20px;
+    }
+    .contact-text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: 0 0 8px#000000;
+        font-size: 25px;
+        padding-top: 5px;
+        margin-left: 15px;
+     }
+     .contact-box{
+        margin-left: 600px;
+    }
+    /*footer style*/
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 50px;
+    }
+    .footer-logo:before{
+        left: 15%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -180px;
+    }
+    #icon-img{
+        margin-left: 30px;  
+        margin-top: 50px; 
+    }
+    .gg{
+        display: none;
+    }
+
+
+
+}
+ @media  (max-width:1123px){
+     /*last progressed*/
+     .title2{
+        margin-right: 300px;
+    }
+    .progressed-text{
+        margin-left: 500px;
+    }
+    .paragraphe2{
+        font-size: 16px;
+        margin-top: 20px;
+        margin-left: 500px;
+        padding-bottom: 100px;
+     }
+     /*team skills*/
+      /*html img style*/
+    .html{
+        height: 120px;
+    }
+    /*css img style*/
+    .css{
+        margin-left: 50px;
+        height: 120px;
+        margin-top: 50px;
+    }
+    /*js style*/
+    .javascript{
+        height: 120px;
+    }
+    /*python style*/
+    .python-img{
+        height: 120px;
+        margin-left: 50px;
+    }
+    .Arrow4{
+        margin-left: 500px;
+    }
+    .python{
+        margin-left: 280px;
+    }
+
+     /*login style*/
+     .login{
+        height: 550px;
+    }
+    .title4{
+        margin-left: 450px;
+    }
+    .title4::before{
+        left: 16%;
+    }
+    .robolab-img{
+        height: 310px;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+    .login-box{
+        margin-left: 56%;
+        margin-top: -340px;
+        box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -webkit-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -moz-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+      }
+
+
+       /*contact style*/
+     .title5{
+        margin-left: 450px;
+    }
+    .title5:before{
+        left: 17%;
+    }
+    .hello{
+        margin-top: 230px;
+        margin-left: 20px;
+    }
+    .contact-text{
+        font-size: 25px;
+        padding-top: 5px;
+        margin-left: 15px;
+     }
+     .contact-box{
+        margin-left: 550px;
+    }
+    /*footer style*/
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 50px;
+    }
+    .footer-logo:before{
+        left: 15%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -180px;
+    }
+    #icon-img{
+        margin-left: 30px;  
+        margin-top: 50px; 
+    }
+    .gg{
+        display: none;
+    }
+
+
+}
+ @media  (max-width:1090px){
+    /*last progressed*/
+    .title2{
+       margin-right: 150px;
+   }
+   .title2::before{
+    right: -9%;
+    }
+
+     /*team skills*/
+    /*html img style*/
+    .html{
+        height: 100px;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left: 8%;
+   }
+   .ht{
+    margin-right: 32%;
+    margin-top: -85px;
+   }
+    /*css img style*/
+    .css{
+        height: 100px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 130px;
+    margin-left: 420px;
+    }
+    .cs{
+    margin-left: 217px;
+    margin-top: -85px;
+    }
+    /*js style*/
+    .javascript{
+        height: 100px;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 130px;
+    margin-left: 100px;
+    }
+    .js{
+    margin-top: -90px;
+    margin-right: 29%;
+    }
+    /*python style*/
+    .python-img{
+        height: 100px;
+        margin-left: 60px;
+    }
+    .Arrow4{
+        margin-left: 470px;
+        height: 120px;
+        width: 130px;
+    }
+    .python{
+        margin-left: 280px;
+        margin-top: -90px;
+    }
+
+    /*login style*/
+    .login{
+        height: 550px;
+    }
+    .title4{
+        margin-left: 400px;
+    }
+    .title4::before{
+        left: 17%;
+    }
+    .robolab-img{
+        height: 310px;
+        margin-top: 120px;
+        margin-left: 7px;
+    }
+    .login-box{
+        margin-left: 53%;
+        margin-top: -340px;
+        box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -webkit-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+        -moz-box-shadow: 19px 12px 36px -2px rgba(0,0,0,0.85);
+      }
+}
+@media  (max-width:1080px){
+    
+       /*contact style*/
+       .title5{
+        margin-left: 450px;
+    }
+    .title5:before{
+        left: 17%;
+    }
+    .hello{
+        margin-top: 280px;
+        margin-left: 20px;
+    }
+    .contact-text{
+        font-size: 20px;
+        padding-top: 5px;
+        margin-left: 15px;
+     }
+     .contact-box{
+        margin-left: 480px;
+    }
+    /*footer style*/
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 50px;
+    }
+    .footer-logo:before{
+        left: 15%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -180px;
+    }
+    #icon-img{
+        margin-left: 30px;  
+        margin-top: 50px; 
+    }
+    .gg{
+        display: none;
+    }
+}
+@media  (max-width:1020px){
+    /* team*/
+    section .title1{ 
+        margin-left: 360px;
+    }
+    .paragraphe{
+        margin-left: 130px;
+    }
+    .btn2{
+        margin-left: 130px;
+    }
+
+
+      /*team skills*/
+    /*html img style*/
+    .html{
+        height: 100px;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left: 8%;
+   }
+   .ht{
+    margin-right: 31%;
+    margin-top: -85px;
+   }
+    /*css img style*/
+    .css{
+        height: 100px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 130px;
+    margin-left: 400px;
+    }
+    .cs{
+    margin-left: 205px;
+    margin-top: -85px;
+    }
+    /*js style*/
+    .javascript{
+        height: 100px;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 130px;
+    margin-left: 90px;
+    }
+    .js{
+    margin-top: -90px;
+    margin-right: 27%;
+   }
+    /*python style*/
+    .python-img{
+        height: 100px;
+        margin-left: 50px;
+    }
+    .Arrow4{
+        margin-left: 450px;
+        height: 120px;
+        width: 130px;
+    }
+    .python{
+        margin-left: 250px;
+        margin-top: -90px;
+    }
+     /*contact style*/
+     .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 450px;
+    }
+    .title5:before{
+        left: 17%;
+    }
+    .hello{
+        margin-top: 130px;
+        margin-left: 220px;
+    }
+    .contact-text{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 220px;
+     }
+     .contact-box{
+        margin-left: 280px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 340px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+    }
+    #icon-img{
+        margin-left: 50px;  
+        margin-top: 240px; 
+        margin-left: 120px;
+
+    }
+}
+@media  (max-width:990px){
+    
+    /*login style*/
+    .title4{
+        margin-left: 400px;
+    }
+    .title4::before{
+        left: 19.5%;
+    }
+    .robolab-img{
+        height: 290px;
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+    .login-box{
+        margin-left: 47%;
+        margin-top: -290px;
+      }
+
+       /*contact style*/
+     .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 380px;
+    }
+    .title5:before{
+        left: 19%;
+    }
+    .hello{
+        margin-top: 130px;
+        margin-left: 150px;
+    }
+    .contact-text{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 150px;
+     }
+     .contact-box{
+        margin-left: 250px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 320px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+    }
+    #icon-img{
+        margin-left: 50px;  
+        margin-top: 240px; 
+        margin-left: 120px;
+
+    }
+}
+ @media  (max-width:967px){
+      /*last progressed*/    
+    .paragraphe2{
+        font-size: 17px;
+        margin-top: 20px;
+        margin-left: 430px;
+        padding-bottom: 100px;
+     }
+     .container{
+        width: 400px;
+        height: 180px;
+        margin-left: 10px;
+        margin-top: -310px;
+    }
+    .video{
+        -webkit-box-shadow: 5px 5px 22px 0px rgba(0, 0, 0, 1);
+        -moz-box-shadow:    5px 5px 22px 0px rgba(0, 0, 0, 1);
+        box-shadow:         5px 5px 22px 0px rgba(0, 0, 0, 1);
+    }
+    /*team skills*/
+    /*html img style*/
+    .html{
+        height: 100px;
+        margin-left:10%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:7%;
+   }
+   .ht{
+    margin-right: 29%;
+    margin-top: -85px;
+   }
+    /*css img style*/
+    .css{
+        height: 100px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 130px;
+    margin-left: 375px;
+    }
+    .cs{
+    margin-left: 189px;
+    margin-top: -85px;
+    }
+    /*js style*/
+    .javascript{
+        height: 100px;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 130px;
+    margin-left: 77px;
+    }
+    .js{
+    margin-top: -90px;
+    margin-right: 26%;
+   }
+    /*python style*/
+    .python-img{
+        height: 100px;
+        margin-left: 50px;
+    }
+    .Arrow4{
+        margin-left: 420px;
+        height: 120px;
+        width: 130px;
+    }
+    .python{
+        margin-left: 230px;
+        margin-top: -90px;
+    }
+}
+@media  (max-width:950px){
+    /* navbar*/
+    ul li{
+        padding: 2px;
+        margin: 2px;
+        margin-top: 18px;
+    }
+    #logo{
+      width: 140px;
+      height: 60px;
+      margin-top: 12px;
+      margin-left: -24px;
+    }
+
+     /* team*/
+     section .title1{ 
+        margin-left: 330px;
+    }
+    .paragraphe{
+        margin-left: 90px;
+    }
+    .btn2{
+        margin-left: 90px;
+    }
+    /*last progressed*/
+    .title2{
+        margin-right: 280px;
+    }
+    .title2::before{
+        right: -13%;
+    }
+    /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 380px;
+    }
+    .title5:before{
+        left: 19%;
+    }
+    .hello{
+        margin-top: 130px;
+        margin-left: 150px;
+    }
+    .contact-text{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 150px;
+     }
+     .contact-box{
+        margin-left: 230px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 300px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+    }
+    #icon-img{
+        margin-left: 50px;  
+        margin-top: 240px; 
+        margin-left: 120px;
+
+    }
+
+}
+ @media  (max-width:924px){
+    /*last progressed*/
+    .title2{
+        margin-right: 270px;
+    }
+    .title2::before{
+        right: -14.5%;
+    }
+    .achievements-form{
+     height: 90vh;
+    }
+    .container{
+        margin-top: -290px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .progressed-text{
+        margin-left: 160px;
+    }
+    .paragraphe2{
+        margin-left: 150px;
+        font-size: 20px;
+    }
+    /*team skills*/
+    /*html img style*/
+    .html{
+        height: 80px;
+        margin-left:10%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:7%;
+   }
+   .ht{
+    margin-right: 33%;
+    margin-top: -75px;
+    font-size: 35px;
+   }
+    /*css img style*/
+    .css{
+        height: 80px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 120px;
+    margin-left: 335px;
+    }
+    .cs{
+    margin-left: 165px;
+    margin-top: -85px;
+    }
+    /*js style*/
+    .javascript{
+        height: 90px;
+      margin-left: 20%;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left: 77px;
+    }
+    .js{
+    margin-top: -80px;
+    margin-right: 29%;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left: 50px;
+    }
+    .Arrow4{
+        margin-left: 390px;
+        height: 120px;
+         width: 120px;
+    }
+    .python{
+        margin-left: 210px;
+        margin-top: -90px;
+    }
+
+    /*login style*/
+    .title4{
+        margin-left: 400px;
+    }
+    .title4::before{
+        left: 21%;
+        width: 160px;
+    }
+    .robolab-img{
+        height: 290px;
+        margin-top: 100px;
+        margin-left: 5px;
+    }
+    .login-box{
+        margin-left: 47%;
+        margin-top: -290px;
+      }
+
+
+
+}
+@media  (max-width:900px){
+    /*team skills*/
+    /*html img style*/
+    .html{
+        height: 80px;
+        margin-left:-1%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:0%;
+   }
+   .ht{
+    margin-right: 59%;
+    margin-top: -80px;
+    font-size: 35px;
+   }
+    /*js style*/
+    .javascript{
+        height: 90px;
+        margin-left:-1%;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left:2%;
+    }
+    .js{
+    margin-top: -80px;
+    margin-right: 60%;
+    font-size: 35px;
+    } 
+    /*css img style*/
+    .css{
+        height: 80px;
+        margin-left:35px;
+        margin-top: -55px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 120px;
+    margin-left: 590px;
+    }
+    .cs{
+    margin-left: 500px;
+    margin-top: -85px;
+    font-size: 35px;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left: 40px;
+        margin-top: -200px;
+    }
+    .Arrow4{
+        height: 120px;
+        width: 120px;
+        margin-left: 620px;  
+        margin-top: -190px;
+    }
+    .python{
+        margin-left: 530px;
+        margin-top: -80px;
+        font-size: 35px;
+    }
+     /*login style*/
+     .title4{
+        margin-left: 330px;
+    }
+    .title4::before{
+        left: 19%;
+        width: 160px;
+    }
+    .robolab-img{
+        height: 290px;
+        margin-top: 165px;
+        margin-left: 5px;
+    }
+    .login-box{
+        margin-left: 47%;
+        margin-top: -355px;
+      }
+
+      /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 340px;
+    }
+    .title5:before{
+        left: 20%;
+    }
+    .hello{
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .contact-text{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 100px;
+     }
+     .contact-box{
+        margin-left: 200px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 270px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+    }
+    #icon-img{
+        margin-left: 50px;  
+        margin-top: 240px; 
+        margin-left: 100px;
+
+    }
+
+}
+@media  (max-width:850px){
+     /*team*/
+     section .title1{ 
+        margin-left: 300px;
+    }
+    .paragraphe{
+        margin-left: 40px;
+    }
+    .btn2{
+        margin-left: 40px;
+    }
+     /*last progressed*/
+     .progressed-text{
+        margin-left: 100px;
+    }
+    .paragraphe2{
+        margin-left: 100px;
+        font-size: 20px;
+    }
+    
+      /*contact style*/
+      .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 340px;
+    }
+    .title5:before{
+        left: 20%;
+    }
+    .hello{
+        margin-top: 130px;
+        margin-left: 100px;
+    }
+    .contact-text{
+        font-size: 30px;
+        padding-top: 10px;
+        margin-left: 100px;
+     }
+     .contact-box{
+        margin-left: 160px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 37px;
+        margin-left: 240px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -180px;
+    }
+    #icon-img{
+        margin-left: 50px;  
+        margin-top: 240px; 
+        margin-left: 100px;
+
+    }
+
+}
+@media  (max-width:881px){
+
+    /*team skills*/
+    /*html img style*/
+    .html{
+        height: 80px;
+        margin-left:-1%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:0%;
+   }
+   .ht{
+    margin-right: 59%;
+    margin-top: -80px;
+    font-size: 35px;
+   }
+    /*js style*/
+    .javascript{
+        height: 90px;
+        margin-left:-1%;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left:2%;
+    }
+    .js{
+    margin-top: -80px;
+    margin-right: 60%;
+    font-size: 35px;
+    } 
+    /*css img style*/
+    .css{
+        height: 80px;
+        margin-left:35px;
+        margin-top: -55px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 120px;
+    margin-left: 500px;
+    }
+    .cs{
+    margin-left: 430px;
+    margin-top: -85px;
+    font-size: 35px;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left: 40px;
+        margin-top: -200px;
+    }
+    .Arrow4{
+        height: 120px;
+        width: 120px;
+        margin-left: 530px;  
+        margin-top: -190px;
+    }
+    .python{
+        margin-left: 460px;
+        margin-top: -80px;
+        font-size: 35px;
+    }
+
+
+    /*login style*/
+     .title4{
+        margin-left: 330px;
+    }
+    .title4::before{
+        left: 20%;
+        width: 160px;
+    }
+    .robolab-img{
+        display: none;
+    }
+    .login-box{
+        margin-left: 27%;
+        margin-top: 90px;
+      }
+}
+@media  (max-width:850px){
+
+    /*team skills*/
+    /*html img style*/
+   .ht{
+    margin-right: 53%;
+   }
+    /*js style*/
+    .js{
+    margin-right: 54%;
+    } 
+}
+ @media  (max-width:810px){
+    /*navbar*/
+    ul li{
+        padding: 2px;
+        margin: 2px;
+        margin-top: 18px;
+    }
+    #logo{
+      margin-left: -45px;
+    }
+    /*team*/
+    section .title1{ 
+     margin-left: 250px;
+    }
+    .paragraphe{
+      margin-left: 10px;
+    }
+    .btn2{
+     margin-left: 10px;
+    }
+     /*last progressed*/
+     .progressed-text{
+        margin-left: 80px;
+    }
+    .paragraphe2{
+        margin-left: 80px;
+        font-size: 20px;
+    }
+    /*login style*/
+    .title4{
+        margin-left: 280px;
+    }
+    .title4::before{
+        left: 20%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 21%;
+        margin-top: 90px;
+      }
+
+        /*contact style*/
+        .contact{
+            height: 700px;
+        }
+         .title5{
+            margin-left: 280px;
+        }
+        .title5:before{
+            left: 21%;
+        }
+        .hello{
+            margin-top: 130px;
+            margin-left: 80px;
+        }
+        .contact-text{
+            font-size: 30px;
+            padding-top: 10px;
+            margin-left: 60px;
+         }
+         .contact-box{
+            margin-left: 130px;
+            margin-top: -700px;
+    
+        }
+        /*footer style*/
+        .footer{
+            height: 400px;
+        }
+        .footer-logo{
+            font-size: 35px;
+            margin-left: 210px;
+            top: 190px;
+        }
+        .footer-logo:before{
+            left: 28%;
+        }
+        .footer-logo::after{
+            content: "let's connect ";
+            margin-left: -170px;
+            margin-top: 61px;
+
+
+        }
+        #icon-img{
+            margin-left: 90px;  
+            margin-top: 240px; 
+    
+        }
+ }
+ @media  (max-width:790px){
+   /*team skills*/ 
+    /*css img style*/
+    .css{
+        height: 80px;
+        margin-left:30px;
+        margin-top:-55px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 110px;
+    margin-left: 480px;
+    }
+    .cs{
+    margin-left: 380px;
+    margin-top: -85px;
+    font-size: 35px;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left: 40px;
+        margin-top: -200px;
+    }
+    .Arrow4{
+        height: 120px;
+        width: 110px;
+        margin-left: 500px;  
+        margin-top: -190px;
+    }
+    .python{
+        margin-left: 410px;
+        margin-top: -80px;
+        font-size: 35px;
+    }   
+}
+@media  (max-width:785px){
+     /*navbar*/
+    ul li{
+        margin-top: 70px;
+        margin-right: 15px;  
+    }
+    #logo{
+      margin-left: 265px;
+      margin-top: -15px;
+    }
+    .navbar{
+        height: 120px;
+    }
+   
+    /*team*/
+    .paragraphe{
+        font-size: 22px;
+    }
+     /*last progressed*/
+     .title2{
+        margin-right: 200px;
+    }
+     .progressed-text{
+        margin-left: 30px;
+    }
+    .paragraphe2{
+        margin-left: 30px;
+        font-size: 20px;
+    }
+     /*login style*/
+     .title4{
+        margin-left: 250px;
+    }
+    .title4::before{
+        left: 20%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 21%;
+        margin-top: 90px;
+      }
+
+}
+@media  (max-width:750px){
+   /*team skills*/
+    /*html img style*/
+    .html{
+        height: 80px;
+        margin-left:-2.5%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:-6%;
+
+   }
+   .ht{
+    margin-right: 55%;
+    margin-top: -80px;
+    font-size: 35px;
+   }
+    /*js style*/
+    .javascript{
+        height: 90px;
+        margin-left:-3%;
+    }
+    .Arrow3{
+    height: 120px;
+    width: 120px;
+    margin-top: -60px;
+    margin-left:-4%;
+    }
+    .js{
+    margin-top: -80px;
+    margin-right: 56%;
+    font-size: 35px;
+    } 
+    /*css img style*/
+    .css{
+        height: 80px;
+        margin-left:35px;
+        margin-top: -55px;
+    }
+    .Arrow2{
+    height: 120px;
+    width: 120px;
+    margin-left: 410px;
+    }
+    .cs{
+    margin-left: 330px;
+    margin-top: -85px;
+    font-size: 35px;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left:30px;
+        margin-top: -200px;
+    }
+    .Arrow4{
+        height: 120px;
+        width: 120px;
+        margin-left: 450px;  
+        margin-top: -190px;
+    }
+    .python{
+        margin-left: 370px;
+        margin-top: -80px;
+        font-size: 35px;
+    }
+     /*login style*/
+    .title4{
+        margin-left: 250px;
+    }
+    .title4::before{
+        left: 20%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 21%;
+        margin-top: 90px;
+      }
+
+      
+        /*contact style*/
+        .contact{
+            height: 700px;
+        }
+         .title5{
+            margin-left: 250px;
+        }
+        .title5:before{
+            left: 22%;
+        }
+        .hello{
+            margin-top: 130px;
+            margin-left: 40px;
+        }
+        .contact-text{
+            font-size: 30px;
+            padding-top: 10px;
+            margin-left: 30px;
+         }
+         .contact-box{
+            margin-left: 90px;
+            margin-top: -700px;
+    
+        }
+        /*footer style*/
+        .footer{
+            height: 400px;
+        }
+        .footer-logo{
+            font-size: 35px;
+            margin-left: 160px;
+            top: 190px;
+        }
+        .footer-logo:before{
+            left: 28%;
+        }
+        .footer-logo::after{
+            content: "let's connect ";
+            margin-left: -170px;
+            margin-top: 61px;
+
+
+        }
+        #icon-img{
+            margin-left: 80px;  
+            margin-top: 240px; 
+    
+        }
+
+}
+@media  (max-width:732px){
+     /*navbar*/
+    #logo{
+      margin-left: 240px;
+    }
+    /*team*/
+    section .title1{ 
+        margin-left: 220px;
+       }
+       .paragraphe{
+         margin-left: 5px;
+         font-size: 20px;
+       }
+       .btn2{
+        margin-left: 5px;
+       }
+    /*last progressed*/
+     .progressed-text{
+        margin-left: 20px;
+    }
+    .paragraphe2{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    
+}
+ @media  (max-width:730px){
+     /*navbar*/
+    ul li{    
+        margin-right: 10px;  
+    }
+
+}
+@media  (max-width:700px){
+  /*navbar*/
+    ul li{    
+        margin-right: 5px;  
+    }
+  /*team skills*/
+    /*html img style*/
+    .html{
+        height: 80px;
+        margin-left:-2.5%;
+    }
+    .Arrow{
+    height: 120px;
+    width: 120px;
+    margin-left:-6%;
+   }
+   .ht{
+    margin-right: 55%;
+    margin-top: -80px;
+    font-size: 35px;
+   }
+    /*js style*/
+    .javascript{
+        height: 90px;
+        margin-left:-3%;
+    }
+    .Arrow3{
+    height: 100px;
+    width: 100px;
+    margin-top: -60px;
+    margin-left:-4%;
+    }
+    .js{
+    margin-top: -80px;
+    margin-right: 56%;
+    font-size: 35px;
+    } 
+    /*css img style*/
+    .css{
+        height: 80px;
+        margin-left:18px;
+        margin-top: -55px;
+    }
+    .Arrow2{
+    height: 100px;
+    width: 100px;
+    margin-left: 410px;
+    }
+    .cs{
+    margin-left: 330px;
+    margin-top: -70px;
+    font-size: 35px;
+    }
+    /*python style*/
+    .python-img{
+        height: 80px;
+        margin-left: 10px;
+        margin-top: -200px;
+    }
+    .Arrow4{
+        height: 100px;
+        width: 100px;
+        margin-left: 440px;  
+        margin-top: -190px;
+    }
+    .python{
+        margin-left: 360px;
+        margin-top: -77px;
+        font-size: 35px;
+    }
+     /*last progressed*/
+     .title2::before{
+        right: -15.5%;
+    }
+      /*login style*/
+      .title4{
+        margin-left: 243px;
+    }
+    .title4::before{
+        left: 23%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 19%;
+        margin-top: 90px;
+      }
+
+
+      /*contact style*/
+      .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 220px;
+    }
+    .title5:before{
+        left: 22%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 25px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 90px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 160px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+
+
+    }
+    #icon-img{
+        margin-left:70px;  
+        margin-top: 240px; 
+
+    }
+}
+ @media  (max-width:670px){
+    ul li{    
+        margin-right: 3px;  
+    }
+    #logo{
+        margin-left: 210px;
+    }
+      /*login style*/
+      .title4{
+        margin-left: 225px;
+    }
+    .title4::before{
+        left: 24%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 19%;
+        margin-top: 90px;
+      }
+}
+ @media  (max-width:659px){
+     /*navbar*/
+    ul li{    
+        margin-right: 0px;  
+    }
+    #logo{
+        margin-left: 210px;
+    }
+     /*team*/
+     section .title1{ 
+        margin-left: 160px;
+       }
+       .paragraphe{
+         margin-left: 2px;
+         font-size: 18px;
+       }
+       .btn2{
+        margin-left: 2px;
+       }
+
+       /*last progressed*/
+       .title2{
+           margin-right: 170px;
+       }
+       .title2::before{
+        right: -16.5%;
+    }
+     .progressed-text{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .paragraphe2{
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    .container{
+        margin-top: -350px;
+    }
+    .video{
+        width: 110vh;
+        height: 35vh;
+        
+    }
+}
+ @media  (max-width:650px){
+     /*team skills*/
+    /*html img style*/
+    .html{
+        height: 60px;
+        margin-left:1%;
+    }
+    .Arrow{
+    height: 80px;
+    width: 80px;
+    margin-left:-2%;
+   }
+   .ht{
+    margin-right: 56%;
+    margin-top: -60px;
+    font-size: 30px;
+   }
+    /*js style*/
+    .javascript{
+        height: 60px;
+        margin-left:4%;
+    }
+    .Arrow3{
+    height: 80px;
+    width: 80px;
+    margin-top: -60px;
+    margin-left:0%;
+    }
+    .js{
+    margin-top: -60px;
+    margin-right: 56%;
+    font-size: 30px;
+    } 
+    /*css img style*/
+    .css{
+        height: 60px;
+        margin-left:18px;
+        margin-top: -20px;
+    }
+    .Arrow2{
+    height: 80px;
+    width: 80px;
+    margin-left: 410px;
+    }
+    .cs{
+    margin-left: 310px;
+    margin-top: -60px;
+    font-size: 30px;
+    }
+    /*python style*/
+    .python-img{
+        height: 60px;
+        margin-left: 10px;
+    }
+    .Arrow4{
+        height: 80px;
+        width: 80px;
+        margin-left: 420px;  
+        margin-top: -2500px;
+    }
+    .python{
+        margin-left: 324px;
+        margin-top: -70px;
+        font-size: 30px;
+    }
+
+    /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 220px;
+    }
+    .title5:before{
+        left: 26%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 25px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 50px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 160px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 28%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+
+
+    }
+    #icon-img{
+        margin-left:55px;  
+        margin-top: 240px; 
+
+    }
+}
+ @media  (max-width:640px){
+    ul li{    
+        margin-right: -5px;  
+    }
+    #logo{
+        margin-left: 190px;
+    }
+    /*login style*/
+    .title4{
+        margin-left: 200px;
+    }
+    .title4::before{
+        left: 24%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 15%;
+        margin-top: 90px;
+      }
+}
+ @media  (max-width:610px){
+     /*navbar*/
+    ul li{    
+        margin-right: -10px;  
+    }
+    #logo{
+        margin-left: 190px;
+    }
+     /*team*/
+     section .title1{ 
+        margin-left: 150px;
+       }
+       .paragraphe{
+         margin-left: 2px;
+         font-size: 17px;
+       }
+       .btn2{
+        margin-left: 2px;
+       }
+       /*last progressed*/
+       .title2{
+        margin-right: 150px;
+    }
+    .title2::before{
+     right: -18%;
+     }
+
+      /*team skills*/
+    /*html img style*/
+    .html{
+        height: 60px;
+        margin-left:1%;
+    }
+    .Arrow{
+    height: 80px;
+    width: 80px;
+    margin-left:-2%;
+   }
+   .ht{
+    margin-right: 51%;
+    margin-top: -60px;
+    font-size: 30px;
+   }
+    /*js style*/
+    .javascript{
+        height: 60px;
+        margin-left:4%;
+    }
+    .Arrow3{
+    height: 80px;
+    width: 80px;
+    margin-top: -60px;
+    margin-left:0%;
+    }
+    .js{
+    margin-top: -61px;
+    margin-right: 52%;
+    font-size: 30px;
+    } 
+    /*css img style*/
+    .css{
+        height: 60px;
+        margin-left:10px;
+        margin-top: -20px;
+    }
+    .Arrow2{
+    height: 80px;
+    width: 80px;
+    margin-left: 380px;
+    }
+    .cs{
+    margin-left: 310px;
+    margin-top: -60px;
+    font-size: 30px;
+    }
+    /*python style*/
+    .python-img{
+        height: 60px;
+        margin-left: 10px;
+    }
+    .Arrow4{
+        height: 80px;
+        width: 80px;
+        margin-left: 385px;  
+    }
+    .python{
+        margin-left: 320px;
+        margin-top: -70px;
+        font-size: 30px;
+    }
+
+    /*login style*/
+    .title4{
+        margin-left: 180px;
+    }
+    .title4::before{
+        left: 25%;
+        width: 160px;
+    }
+    .login-box{
+        margin-left: 15%;
+        margin-top: 90px;
+      }
+
+
+
+      /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 180px;
+    }
+    .title5:before{
+        left: 26%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 23px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 20px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 100px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 33%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+
+
+    }
+    #icon-img{
+        margin-left:45px;  
+        margin-top: 240px; 
+
+    }
+}
+ @media  (max-width:585px){
+     /*home*/
+    .home .form .text1{
+        font-size: 27px;
+        margin-left: 30px;
+    }
+    .home .form .text2{
+        font-size: 27px;
+        margin-left: 30px;
+    }
+    .home .form .text3{
+        font-size: 27px;
+        margin-left: 30px;
+    }
+    .home .form .text4{
+        font-size: 27px;
+        margin-left: 30px;
+    }
+    .btn1 a{
+        margin-left:30px ;
+    }
+     /*last progressed*/
+     .title2{
+        margin-right: 130px;
+    }
+    .title2::before{
+     right: -18%;
+    }
+    .progressed-text{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .paragraphe2{
+        margin-left: 20px;
+        font-size: 15px;
+    }
+}
+ @media  (max-width:580px){
+     /*navbar*/
+    ul li{    
+        margin-right: -15px;  
+    }
+    #logo{
+        margin-left: 150px;
+    }
+    /*team*/
+    section .title1{ 
+        margin-left: 130px;
+       }
+       .paragraphe{
+         margin-left: -30px;
+         font-size: 17px;
+       }
+       .btn2{
+        margin-left: -30px;
+       }
+ }
+ @media  (max-width:560px){
+     /*team skills*/
+    /*html img style*/
+    .html{
+        height: 50px;
+        margin-left:1%;
+    }
+    /*js style*/
+    .javascript{
+        height: 50px;
+        margin-left:4%;
+    } 
+    /*css img style*/
+    .css{
+        height: 50px;
+        margin-left:10px;
+        margin-top: -20px;
+    }
+    /*python style*/
+    .python-img{
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    /*login style*/
+    .title4{
+        margin-left: 150px;
+    }
+    .title4::before{
+        left: 25%;
+        width: 170px;
+    }
+    .login-box{
+        margin-left:10%;
+        margin-top: 90px;
+      }
+}
+ @media  (max-width:550px){
+     /*navbar*/
+    ul li{    
+        margin-right: -18px;  
+    }
+     /*last progressed*/
+     .title2{
+        margin-right: 110px;
+    }
+    .title2::before{
+     right: -19%;
+    }
+     .progressed-text{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    .paragraphe2{
+        margin-left: 20px;
+        font-size: 14px;
+    }
+      /*team skills*/
+    /*html img style*/
+    .html{
+        height: 50px;
+        margin-left:1%;
+    }
+    .Arrow{
+    height: 80px;
+    width: 80px;
+    margin-left:-2%;
+   }
+   .ht{
+    margin-right: 51%;
+    margin-top: -60px;
+    font-size: 30px;
+   }
+    /*js style*/
+    .javascript{
+        height: 50px;
+        margin-left:4%;
+    }
+    .Arrow3{
+    height: 80px;
+    width: 80px;
+    margin-top: -60px;
+    margin-left:0%;
+    }
+    .js{
+    margin-top: -61px;
+    margin-right: 52%;
+    font-size: 30px;
+    } 
+    /*css img style*/
+    .css{
+        height: 50px;
+        margin-left:10px;
+        margin-top: -20px;
+    }
+    .Arrow2{
+    height: 80px;
+    width: 80px;
+    margin-left: 360px;
+    }
+    .cs{
+    margin-left: 290px;
+    margin-top: -60px;
+    font-size: 30px;
+    }
+    /*python style*/
+    .python-img{
+        height: 50px;
+        margin-left: 10px;
+    }
+    .Arrow4{
+        height: 80px;
+        width: 80px;
+        margin-left: 370px;  
+    }
+    .python{
+        margin-left: 290px;
+        margin-top: -70px;
+        font-size: 30px;
+    }
+
+
+
+    /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 150px;
+    }
+    .title5:before{
+        left: 28%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 21px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 10px;
+        margin-top: -700px;
+
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 100px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 33%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+    }
+    #icon-img{
+        margin-left:45px;  
+        margin-top: 240px; 
+
+    }
+}
+ @media  (max-width:533px){
+     /*navbar*/
+    ul li{    
+        margin-right: -23px;  
+    }
+     /*team*/
+     section .title1{ 
+        margin-left: 100px;
+       }
+       .paragraphe{
+         margin-left: -40px;
+         font-size: 17px;
+       }
+       .btn2{
+        margin-left: -40px;
+       }
+       /*last progressed*/
+       .title2{
+        margin-right: 85px;
+    }
+    .title2::before{
+     right: -20%;
+    }
+    .container{
+    margin-top: -330px;
+    }
+      /*team skills*/
+    /*html img style*/
+    .html{
+        height: 50px;
+        margin-left:1%;
+    }
+    .Arrow{
+    height: 80px;
+    width: 80px;
+    margin-left:-2%;
+   }
+   .ht{
+    margin-right: 51%;
+    margin-top: -60px;
+    font-size: 30px;
+   }
+    /*js style*/
+    .javascript{
+        height: 50px;
+        margin-left:4%;
+    }
+    .Arrow3{
+    height: 80px;
+    width: 80px;
+    margin-top: -60px;
+    margin-left:0%;
+    }
+    .js{
+    margin-top: -61px;
+    margin-right: 52%;
+    font-size: 30px;
+    } 
+    /*css img style*/
+    .css{
+        height: 50px;
+        margin-left:10px;
+        margin-top: -20px;
+    }
+    .Arrow2{
+    height: 80px;
+    width: 80px;
+    margin-left: 340px;
+    }
+    .cs{
+    margin-left: 270px;
+    margin-top: -60px;
+    font-size: 30px;
+    }
+    /*python style*/
+    .python-img{
+        height: 50px;
+        margin-left: 10px;
+    }
+    .Arrow4{
+        height: 80px;
+        width: 80px;
+        margin-left: 350px;  
+    }
+    .python{
+        margin-left: 280px;
+        margin-top: -70px;
+        font-size: 30px;
+    }
+
+    /*login style*/
+    .title4{
+        margin-left: 140px;
+        font-size: 34px;
+
+    }
+    .title4::before{
+        left: 25%;
+        width: 170px;
+    }
+    .login-box{
+        margin-left:6.8%;
+        margin-top: 90px;
+      }
+
+      /*contact style*/
+    .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 150px;
+    }
+    .title5:before{
+        left: 29%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 21px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 3px;
+        margin-top: -700px;
+        box-shadow: none;
+        width: 485px;
+    }
+    #robot{
+        margin-left: 14px;
+    }
+    .text-area{
+        min-width: 440px;
+        min-height: 250px;
+        margin-left: 18px;
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 80px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 38%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+    }
+    #icon-img{
+        margin-left:40px;  
+        margin-top: 240px; 
+
+    }
+}
+@media  (max-width:510px){
+   /*team skills*/
+    /*html img style*/
+    .html{
+        height: 50px;
+        margin-left:0%;
+    }
+    .Arrow{
+    height: 80px;
+    width: 80px;
+    margin-left:-2%;
+   }
+   .ht{
+    margin-right: 50%;
+    margin-top: -55px;
+    font-size: 25px;
+   }
+    /*js style*/
+    .javascript{
+        height: 50px;
+        margin-left:4%;
+    }
+    .Arrow3{
+    height: 80px;
+    width: 80px;
+    margin-top: -60px;
+    margin-left:-1%;
+    }
+    .js{
+    margin-top: -60px;
+    margin-right: 52%;
+    font-size: 25px;
+    } 
+    /*css img style*/
+    .css{
+        height: 50px;
+        margin-left:10px;
+        margin-top: -20px;
+    }
+    .Arrow2{
+    height: 80px;
+    width: 80px;
+    margin-left: 320px;
+    }
+    .cs{
+    margin-left: 260px;
+    margin-top: -55px;
+    font-size: 25px;
+    }
+    /*python style*/
+    .python-img{
+        height: 50px;
+        margin-left: 10px;
+    }
+    .Arrow4{
+        height: 80px;
+        width: 80px;
+        margin-left: 330px;  
+    }
+    .python{
+        margin-left: 270px;
+        margin-top: -65px;
+        font-size: 25px;
+    }
+}
+ @media  (max-width:503px){
+     /*navbar*/
+    ul li{    
+        margin-right: -24px;  
+    }
+    #logo{
+        margin-left: 110px;
+    }
+     /*contact style*/
+     .contact{
+        height: 700px;
+    }
+     .title5{
+        margin-left: 150px;
+    }
+    .title5:before{
+        left: 32%;
+    }
+    .hello{
+        margin-top: 140px;
+        margin-left: 40px;
+    }
+    .contact-text{
+        font-size: 21px;
+        padding-top: 10px;
+        margin-left: 30px;
+     }
+     .contact-box{
+        margin-left: 3px;
+        margin-top: -700px;
+        box-shadow: none;
+        width: 475px;
+    }
+    #robot{
+        margin-left: 11px;
+        width: 218px;
+
+    }
+    .text-area{
+        min-width: 440px;
+        min-height: 250px;
+        margin-left: 18px;
+    }
+    /*footer style*/
+    .footer{
+        height: 400px;
+    }
+    .footer-logo{
+        font-size: 35px;
+        margin-left: 80px;
+        top: 190px;
+    }
+    .footer-logo:before{
+        left: 40%;
+    }
+    .footer-logo::after{
+        content: "let's connect ";
+        margin-left: -170px;
+        margin-top: 61px;
+    }
+    #icon-img{
+        margin-left:40px;  
+        margin-top: 240px; 
+
+    }
+}
